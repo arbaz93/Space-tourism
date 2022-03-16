@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space tourism | Destination</title>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="destinations">
+    <a href="#main" class="skip-to-content">Skip to content</a>
+    <header class="primary-header flex">
+      <div>
+        <img src="assets\shared\logo.svg" alt="Space Tourism" class="logo" />
+      </div>
+      <nav class="flex">
+        <button
+          class="mobile-nav-toggle"
+          aria-control="primary-navigation"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Menu</span>
+        </button>
+        <ul
+          id="primary-navigation"
+          data-visible="false"
+          class="primary-navigation underline-indicators ff-sans-cond flex"
+        >
+          <li>
+            <a class="uppercase text-white letter-spacing-2" href="index.html"
+              ><span aria-hidden="true">00</span>home</a
+            >
+          </li>
+          <li class="active">
+            <a
+              class="uppercase text-white letter-spacing-2"
+              href="destination.html"
+              ><span aria-hidden="true">01</span>destination</a
+            >
+          </li>
+          <li>
+            <a class="uppercase text-white letter-spacing-2" href="crew.html"
+              ><span aria-hidden="true">02</span>crew</a
+            >
+          </li>
+          <li>
+            <a
+              class="uppercase text-white letter-spacing-2"
+              href="technology.html"
+              ><span aria-hidden="true">03</span>technology</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main" class="grid-container grid-container--destination">
+      <h1 class="numbered-title">
+        <span aria-hidden="true">01</span> pick your destination
+      </h1>
+      <picture>
+        <img src="./assets/destination/image-moon.png" alt="the moon" />
+      </picture>
+
+      <!-- tab list -->
+      <div class="tab-list underline-indicators flex">
+        <button
+          aria-selected="true"
+          data-name="Moon"
+          class="uppercase ff-sans-cond text-accent letter-spacing-2"
+        >
+          Moon
+        </button>
+        <button
+          aria-selected="false"
+          data-name="Mars"
+          class="uppercase ff-sans-cond text-accent letter-spacing-2"
+        >
+          Mars
+        </button>
+        <button
+          aria-selected="false"
+          data-name="Europa"
+          class="uppercase ff-sans-cond text-accent letter-spacing-2"
+        >
+          Europa
+        </button>
+        <button
+          aria-selected="false"
+          data-name="Titan"
+          class="uppercase ff-sans-cond text-accent letter-spacing-2"
+        >
+          Titan
+        </button>
+      </div>
+      <article class="destination-info">
+        <h2 class="uppercase fs-800 ff-serif">Moon</h2>
+        <p>
+          See our planet as you’ve never seen it before. A perfect relaxing trip
+          away to help regain perspective and come back refreshed. While you’re
+          there, take in some history by visiting the Luna 2 and Apollo 11
+          landing sites.
+        </p>
+        <div class="destination-meta flex">
+          <div>
+            <h3 class="text-accent uppercase fs-200">Avg. distance</h3>
+
+            <p class="uppercase ff-serif">384,400 km</p>
+          </div>
+          <div>
+            <h3 class="text-accent uppercase fs-200">Est. travel time</h3>
+            <p class="uppercase ff-serif">3 days</p>
+          </div>
+        </div>
+      </article>
+    </main>
+    <script src="script.js" defer></script>
+  </body>
+</html>
