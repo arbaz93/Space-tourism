@@ -90,7 +90,7 @@ body {
   display: grid;
   grid-template-rows: min-content 1fr;
 
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 /* make images easier to work with */
@@ -547,7 +547,6 @@ select {
 }
 .grid-container--crew > picture {
   grid-area: image;
-  max-width: 60%;
   height: 100%;
   border-bottom: 1px solid hsl(var(--clr-white) / 0.1);
 }
@@ -644,8 +643,7 @@ select {
       ". image tabs ."
       ". image content .";
   }
-  .grid-container--destination > picture,
-  .grid-container--crew > picture {
+  .grid-container--destination > picture {
     max-width: 90%;
   }
 
@@ -672,6 +670,9 @@ select {
 
   .grid-container--crew > picture {
     align-self: end;
+    justify-content: end;
+    max-width: 20rem;
+    min-width: 17rem;
   }
 
   .grid-container--technology {
@@ -685,6 +686,7 @@ select {
   }
   .grid-container--technology > picture {
     justify-self: end;
+    grid-row-start: 3;
     max-width: 80%;
   }
   .technology-info > p {
