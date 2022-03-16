@@ -90,9 +90,11 @@ body {
   display: grid;
   grid-template-rows: min-content 1fr;
 
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
-
+body.crew {
+  overflow-x: scroll;
+}
 /* make images easier to work with */
 img,
 picture {
@@ -671,6 +673,7 @@ select {
   .grid-container--crew > picture {
     align-self: end;
     justify-content: end;
+    grid-row-start: 2;
     max-width: 20rem;
     min-width: 17rem;
   }
