@@ -79,6 +79,9 @@ p {
 }
 
 /* set up the body */
+html {
+  overflow-x: hidden;
+}
 body {
   font-family: var(--ff-sans-normal);
   font-size: var(--fs-400);
@@ -91,9 +94,6 @@ body {
   grid-template-rows: min-content 1fr;
 
   overflow-x: hidden;
-}
-body.crew {
-  overflow-x: scroll;
 }
 /* make images easier to work with */
 img,
