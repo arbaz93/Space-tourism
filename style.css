@@ -593,7 +593,7 @@ select {
 .technology-info > p {
   padding-inline: min(1rem, 2rem);
 }
-@media (min-width: 35em) {
+@media (min-width: 45em) {
   .numbered-title {
     justify-self: start;
     margin-top: 2rem;
@@ -628,7 +628,7 @@ select {
     padding-bottom: max(6rem, 20vh);
     align-items: end;
   }
-
+  
   .grid-container--home > *:first-child {
     grid-column: 2;
   }
@@ -644,9 +644,10 @@ select {
       ". title title ."
       ". image tabs ."
       ". image content .";
+    grid-template-columns: minmax(0, 2rem) 1fr 1fr;
   }
   .grid-container--destination > picture {
-    max-width: 90%;
+    max-width: 100%;
   }
 
   .destination-meta {
@@ -696,7 +697,9 @@ select {
     padding-inline: 0;
   }
 }
-
+.grid-container--home {
+  padding-inline: 1rem;
+}
 /* ------------------------------- */
 /* Page specifics --BACKGROUND     */
 /* ------------------------------- */
