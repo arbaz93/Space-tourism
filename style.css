@@ -744,17 +744,26 @@ select {
       ". tabs content image"
       ". tabs content image";
   }
-
+  .grid-container--technology>.number-indicators {
+  }
+  
+  .grid-container--technology>.technology-info {
+    justify-self: start;
+  }
+  
   .grid-container--technology>.number-indicators {
     flex-direction: column;
+    justify-self: end;
   }
 
   .grid-container--technology>picture {
     justify-self: end;
-    grid-row-start: 3;
-    max-width: 80%;
   }
-
+  .grid-container--technology>picture img {
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+  }
   .technology-info>p {
     padding-inline: 0;
   }
@@ -774,6 +783,9 @@ select {
 
     .numbered-title {
       justify-self: normal;
+    }
+    .grid-container--crew .about-member {
+      margin-inline: auto;
     }
   }
 }
