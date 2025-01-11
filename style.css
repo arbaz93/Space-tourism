@@ -743,7 +743,8 @@ select {
       ". title title title"
       ". tabs content image"
       ". tabs content image";
-  }
+      grid-template-columns: auto min-content auto auto;
+}
   .grid-container--technology>.number-indicators {
   }
   
