@@ -24,7 +24,8 @@ This project is built using the following technologies:
 - **Flexbox**  
 - **CSS Grid**  
 - **Mobile-first workflow**  
-
+- **JavaScript** for dynamic content and JSON fetch
+- 
 ## Getting Started  
 
 To get a local copy up and running, follow these steps:  
