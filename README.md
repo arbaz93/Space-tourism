@@ -32,8 +32,10 @@ To get a local copy up and running, follow these steps:
 1. Clone the repository:  
    ```bash  
    git clone https://github.com/arbaz93/Space-tourism
-2.Navigate to the project directory
-3. Open index.html in your preferred web browser.
+   
+2.Navigate to the project directory.
+
+3.Open index.html in your preferred web browser.
 
 ## Usage
 
