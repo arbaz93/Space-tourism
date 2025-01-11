@@ -73,7 +73,7 @@ function getData() {
           // Template to put data extracted from json file
           let template = `<header>
           <h2 class="text-accent uppercase fs-600 ff-serif">${data.role}</h2>
-          <p class="uppercase fs-700 ff-serif">${data.name}</p>
+          <p class="crew-name uppercase fs-700 ff-serif">${data.name}</p>
         </header>
         <p class="text-accent about-member">
           ${data.bio}
@@ -82,7 +82,11 @@ function getData() {
           // change img src and alt
           picture.getElementsByTagName('img')[0].src = data.images.png;
           picture.getElementsByTagName('img')[0].alt = data.name;
-          
+          picture.getElementsByTagName('img')[0].classList.remove("fit-pos-left")
+          picture.getElementsByTagName('img')[0].classList.remove("fit-pos-right")
+          picture.getElementsByTagName('img')[0].classList.remove("fit-pos-center")
+          picture.getElementsByTagName('img')[0].classList.add(data.align)
+
           // Pushing template inside HTML 
           document.querySelector('.crew-info').innerHTML = template
         }
